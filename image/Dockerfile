@@ -26,4 +26,4 @@ RUN yum install redis hostname -y ; yum clean all
 
 # CMD [ "/run.sh" ]
 
-ENTRYPOINT [ "bash", "-c" ]
+# ENTRYPOINT [ "bash", "-c" ]
