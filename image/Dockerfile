@@ -24,7 +24,6 @@ RUN yum install redis hostname -y ; yum clean all
 # RUN mkdir -p /redis-sentinel ; chmod -R 777 /redis-sentinel /redis-slave
 # COPY run.sh /run.sh
 
-# CMD [ "/run.sh" ]
+CMD [ "echo The app is running! && sleep 3600" ]
 
-# ENTRYPOINT [ "bash", "-c" ]
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "bash", "-c" ]
